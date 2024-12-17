@@ -215,5 +215,24 @@ class PayStack:
             "bank_code": account_details['bank_code'],
             "currency": account_details.get('currency', self.default_currency)
         }
-        
+    
         return self._prepare_request('POST', '/transferrecipient', payload)
+    
+    def fetch_balance(self):
+        """
+        Fetch account balance
+        
+        :return: Account balance details
+        """
+        return self._prepare_request('GET', '/balance')
+    
+    
+    def retrieve_transfer(self, transfer_id):
+        """
+        Retrieve transfer details
+        
+        :param transfer_id: Unique transfer ID
+        :return: Transfer details
+        """
+        return self._prepare_request('GET', f'/transfer/{transfer_id}')
+    
