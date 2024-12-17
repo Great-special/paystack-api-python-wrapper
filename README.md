@@ -1,5 +1,3 @@
-# paystack-api-python-wrapper
-
 # Example Usage
 """
 Example of how to use the PayStack API wrapper
@@ -10,7 +8,7 @@ paystack = PayStack('your_secret_key')
 
 # Initialize a transaction
 success, transaction = paystack.initialize_transaction(
-    email='customer@example.com', 
+    email='customer@example.com',
     amount=5000  # 50.00 in base currency
 )
 
