@@ -39,3 +39,85 @@ success, transfer = paystack.bank_transfer(
     recipient=recipient, 
     amount=1000
 )
+
+
+Here's the list of **covered Paystack API endpoints** based on your provided class:
+
+---
+
+### **Transaction Management**
+1. **Initialize Transaction**:  
+   - Endpoint: `/transaction/initialize`  
+   - Method: `POST`  
+   - Method: `initialize_transaction`
+
+2. **Verify Transaction**:  
+   - Endpoint: `/transaction/verify/{reference}`  
+   - Method: `GET`  
+   - Method: `verify_transaction`
+
+---
+
+### **Charge Management**
+3. **Charge a Card**:  
+   - Endpoint: `/charge`  
+   - Method: `POST`  
+   - Method: `charge_card`
+
+---
+
+### **Transfer Management**
+4. **Single Bank Transfer**:  
+   - Endpoint: `/transfer`  
+   - Method: `POST`  
+   - Method: `bank_transfer`
+
+5. **Bulk Transfer**:  
+   - Endpoint: `/transfer/bulk`  
+   - Method: `POST`  
+   - Method: `bulk_transfer`
+
+---
+
+### **Bank and Account Management**
+6. **List Banks**:  
+   - Endpoint: `/bank`  
+   - Method: `GET`  
+   - Method: `list_banks`
+
+7. **Resolve Bank Account**:  
+   - Endpoint: `/bank/resolve`  
+   - Method: `GET`  
+   - Method: `resolve_bank_account`
+
+8. **Create Transfer Recipient**:  
+   - Endpoint: `/transferrecipient`  
+   - Method: `POST`  
+   - Method: `create_transfer_recipient`
+
+---
+
+### Summary of Endpoints:
+| **Feature**                    | **Endpoint**                    | **HTTP Method** | **Class Method**            |
+|--------------------------------|---------------------------------|-----------------|-----------------------------|
+| Initialize Transaction         | `/transaction/initialize`       | POST            | `initialize_transaction`    |
+| Verify Transaction             | `/transaction/verify/{reference}`| GET            | `verify_transaction`        |
+| Charge Card                    | `/charge`                       | POST            | `charge_card`               |
+| Single Bank Transfer           | `/transfer`                     | POST            | `bank_transfer`             |
+| Bulk Transfer                  | `/transfer/bulk`                | POST            | `bulk_transfer`             |
+| List Banks                     | `/bank`                         | GET             | `list_banks`                |
+| Resolve Bank Account           | `/bank/resolve`                 | GET             | `resolve_bank_account`      |
+| Create Transfer Recipient      | `/transferrecipient`            | POST            | `create_transfer_recipient` |
+
+---
+
+### Missing Endpoints (Optional for Future Enhancements)
+- **Refund Transaction**: `/refund`  
+- **Retrieve Transfer**: `/transfer/{id}`  
+- **Disable/Enable OTP** for Transfers  
+- **Transaction Timeline**: `/transaction/timeline/{id}`  
+- **Fetch Settlements**: `/settlement`  
+- **Manage Subscriptions**: `/subscription`  
+- **Fetch Balances**: `/balance`  
+
+Let me know if you'd like to add support for these! 🚀
