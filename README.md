@@ -108,16 +108,9 @@ Here's the list of **covered Paystack API endpoints** based on your provided cla
 | List Banks                     | `/bank`                         | GET             | `list_banks`                |
 | Resolve Bank Account           | `/bank/resolve`                 | GET             | `resolve_bank_account`      |
 | Create Transfer Recipient      | `/transferrecipient`            | POST            | `create_transfer_recipient` |
+| **Fetch Balances**             | `/balance`                      | GET             | `fetch_balance`             |
+| **Retrieve Transfer**          | `/transfer/{transfer_id}`       | GET             | `retrieve_transfer`         |
 
 ---
 
-### Missing Endpoints (Optional for Future Enhancements)
-- **Refund Transaction**: `/refund`  
-- **Retrieve Transfer**: `/transfer/{id}`  
-- **Disable/Enable OTP** for Transfers  
-- **Transaction Timeline**: `/transaction/timeline/{id}`  
-- **Fetch Settlements**: `/settlement`  
-- **Manage Subscriptions**: `/subscription`  
-- **Fetch Balances**: `/balance`  
-
-Let me know if you'd like to add support for these! 🚀
+Thanks to ChatGPT and Claude.
