@@ -19,6 +19,8 @@ card_details = {
     "expiry_month": "12",
     "expiry_year": "25"
 }
+
+
 success, charge_response = paystack.charge_card(
     email='customer@example.com', 
     amount=5000, 
